@@ -1,0 +1,57 @@
+@blue: #1D365D;
+@blue2: #4670b3;
+@our-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@grey: #555;
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: @our-font;
+}
+
+nav{
+    background-color: @blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    ul{
+        list-style: none;
+        display: flex;
+    }
+
+    ul li{
+        margin-right: 20px;
+    }
+}
+
+main{
+    padding: 50px 100px;
+    & > h2, & > p{
+        text-align: center;
+    }
+    .container{
+        gap: 50px;
+        margin-top: 100px;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;
+    }
+    .container div{
+        color: white;
+        padding: 30px;
+        background-color: @grey;
+    }
+}
+
+footer{
+    color: white;
+    background-color: @blue2;
+    padding: 10px;
+    text-align: center;
+}
+
